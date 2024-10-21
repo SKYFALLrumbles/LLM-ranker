@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=DotGothic16&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+
+.wrapper {
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    background-color: transparent;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px 0px 0px 0px ;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .typing-demo {
+    width: 30ch;
+    color: aliceblue;
+    animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 4em;
+  } 
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+:root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;  
+}
+.club-title{
+    color: white;
+    font-family: "Inter", sans-serif;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-size: 1.5rem;
+
+}
+.club-title  span{
+    font-size: 4rem;
+    color: transparent;
+    -webkit-text-stroke: 1.0px white;
+    
+}
+
+.text{
+    height: 60px;
+    background: #7171712b;
+    padding: 0 20px;
+    margin: 0px 0px 0px 44.5%;
+    border-radius:  0 0 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.manu-text{
+    color: white;
+    font-family: "DotGothic16", sans-serif;
+    width: 100px;
+    background: url(../../image/manu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    padding: 10px;
+}
+
+.manu{
+    cursor: pointer;
+    z-index: 999;
+}
+
+.items{
+    display: none;
+    right: -100px;
+}
+.active-manu {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style: none;
+    z-index: 100;
+    position: absolute;
+    width: 200px;
+    right: 0px;
+    gap: 10px;
+    font-family: "DotGothic16", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    align-items: center;
+    text-align: left;
+    height: 75vh;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,0.7624299719887955) 0%, rgba(255,0,0,0) 0%, rgba(255,0,0,0.14058123249299714) 100%);
+    padding-top: 20px;
+    
+}
+
+.active-manu li a{
+    color: white;
+}
+
+.main-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 5rem;
+    transition: 0.4s;
+}
+.di1{
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    background-color: transparent;
+    top: 40%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+   margin: 0px 0px 0px 0px ;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.di2{
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    background-color: transparent;
+    top: 40%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+   margin: 0px 0px 0px 0px ;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bu1{
+    height: 80px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.bu2{
+    height: 80px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.main-text:hover {
+    font-size: 6rem;
+  }
+
+
+.heading-text{
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+}
+
+
+@media screen and (max-width:500px) {
+    .club-title{
+        font-size: 2rem;
+    }
+
+    .main-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        font-size: 3rem;
+    }
+    
+    header{
+        top: 0;
+    }
+    footer{
+        width: 90%;
+        padding: 0 10px ;
+    }
+    
+    .manu-text{
+        width: 70px;
+    }
+    
+}
+
+
+
+/* memeber page  */
+.member-card-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.member-card{
+    clip-path: polygon(90% 0, 100% 9%, 100% 100%, 10% 100%, 0 91%, 0 0);
+    width: 380px;
+    height: 350px;
+    background: #080C15;
+    display: flex;
+}
+.side-bar{
+    position: absolute;
+    width: 380px;
+    height: 350px;
+    background: #252525;
+    clip-path: polygon(0 0, 20% 0, 20% 100%, 6% 100%, 0 92%);
+}
+
+.dp-img{
+    width: 350px;
+    height: 350px;
+    padding-left: 50px;
+}
+
+.side-bar{
+    display: flex;
+    align-items: center;
+}
+
+.side-text{
+    transform: rotate(-90deg);
+    width: 210px;
+    position: relative;
+    left: -60px;
+    font-size: 2rem;
+}
+
+.role{
+    background: url(../../image/role.png);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    padding: 10px;
+}
+.role-text{
+    font-family: "Bungee", sans-serif;
+}
+
+/* about page */
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+   gap: 10px;
+}
+
+.about-image-container{
+    width: 30%;
+}
+.about-text{
+    width: 60%;
+}
+
+.about-text p{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+.event-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.event-container{
+    clip-path: polygon(0 0, 92% 0, 100% 9%, 100% 100%, 8% 100%, 0 90%);
+    background: #080C15;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px 10px;
+    padding: 30px;
+    width: 90%;
+}
+.event-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: white;
+    overflow: hidden;
+}
+.event-image img{
+    width: 200px;
+    height: 200px;
+}
+.details{
+    padding-top: 20px;
+    font-family: "Bungee", sans-serif;
+    color: white;
+    width: 80%;
+}
+.details span{
+    font-family: "Bungee Hairline", sans-serif;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1300px) {
+    .about-container{
+        padding: 0 20px;
+        gap: 10px;
+    }
+    
+    .about-image-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+    
+    .about-text p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .heading-text{
+        width: 85%;
+        font-size: 2rem;
+    }
+
+    .about-container{
+        padding: 0 20px;
+        gap: 10px;
+    }
+    
+    .about-image-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+
+    .about-text p{
+        font-size: 1.2rem;
+    }
+    .event-container{
+        width: 90%;
+    }
+    .details{
+        width: 100%;
+    }
+}
+
+.sun{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+
+
+
+
