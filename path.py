@@ -17,7 +17,7 @@ from email.mime.multipart import MIMEMultipart
 load_dotenv()
 
 # Configure the Gemini API key
-genai.configure(api_key="AIzaSyBzB80E0C8ifzCeaW2UoX9JbV13d-e2jso")
+genai.configure(api_key="api_key")
 
 # Define the folder where PDF files are stored
 PDF_FOLDER_PATH = r"C:\Users\bsaha\OneDrive\Desktop\resumes"  # Change this to your actual folder path
@@ -64,8 +64,8 @@ def extract_email_from_pdf(pdf_content):
 
 # Function to send email
 def send_email(email, subject, message):
-    sender_email = "bskoushik06@gmail.com"  # Add your email
-    sender_password = "hajx jqjn hqka bssi" # Use environment variable for email password
+    sender_email = "gmail"  # Add your email
+    sender_password = "your_passcode" # Use environment variable for email password
 
     msg = MIMEMultipart()
     msg['From'] = sender_email
