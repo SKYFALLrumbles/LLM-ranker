@@ -17,7 +17,7 @@ from email.mime.multipart import MIMEMultipart
 load_dotenv()
 
 # Configure the Gemini API key
-genai.configure(api_key="AIzaSyBzB80E0C8ifzCeaW2UoX9JbV13d-e2jso")
+genai.configure(api_key="api_key")
 
 # --- Helper Functions ---
 def get_gemini_response(input_text, pdf_content, prompt):
@@ -61,8 +61,8 @@ def extract_email_from_pdf(pdf_content):
 
 # Function to send email
 def send_email(email, subject, message):
-    sender_email = "bskoushik06@gmail.com"  # Add your email
-    sender_password = "hajx jqjn hqka bssi" # Use environment variable for email password
+    sender_email = "email"  # Add your email
+    sender_password = "app_passcode" # Use environment variable for email password
 
     msg = MIMEMultipart()
     msg['From'] = sender_email
